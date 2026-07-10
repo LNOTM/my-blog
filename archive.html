@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archive | Pixel Blog</title>
+  <meta name="description" content="Pixel Blog 的文章归档页，按主题和时间集中查看文章。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html" aria-label="Pixel Blog 首页">
+        <span class="brand-mark">PB</span>
+        <span class="brand-copy"><strong>PIXEL BLOG</strong><span>retro atmosphere, readable structure</span></span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="projects.html">项目</a>
+        <a href="archive.html" aria-current="page">归档</a>
+        <a href="templates.html">模板</a>
+        <a href="about.html">关于</a>
+        <a href="posts/building-this-blog.html">最新文章</a>
+      
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+          <span class="theme-toggle-dot" aria-hidden="true"></span>
+          <span data-theme-toggle-label>切换晴天</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="site-shell page-band">
+        <article class="page-band-copy">
+          <span class="article-kicker">ARCHIVE</span>
+          <h1>这里集中放所有文章，方便从“浏览”切换到“检索”。</h1>
+          <p>首页负责建立气氛和导览，归档页则负责帮助读者快速找到主题、时间线和站点内容边界。</p>
+        </article>
+
+        <aside class="page-band-panel">
+          <span class="section-kicker">ARCHIVE PANEL</span>
+          <h3>归档页更像索引板，而不是宣传页。</h3>
+          <div class="status-stack">
+            <div class="status-line"><strong>FORMAT</strong><span>By topic / by date</span></div>
+            <div class="status-line"><strong>RSS</strong><span>feed.xml ready</span></div>
+            <div class="status-line"><strong>SITEMAP</strong><span>Included</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="site-shell surface-grid">
+        <article class="surface-card">
+          <span class="section-kicker">BY TOPIC</span>
+          <h2>主题索引</h2>
+          <ul>
+            <li><a href="posts/procedural-generation.html">World Building: Procedural Generation of Pixel Worlds</a></li>
+            <li><a href="posts/pixel-shaders.html">Shaders: GLSL Shaders for Pixel Art Aesthetics</a></li>
+            <li><a href="posts/building-this-blog.html">Build Notes: Building This Blog for the Open Web</a></li>
+            <li><a href="posts/chiptune-web-audio.html">Audio: Chiptune Composition with Web Audio</a></li>
+          </ul>
+        </article>
+
+        <article class="surface-card">
+          <span class="section-kicker">BY DATE</span>
+          <h2>时间线</h2>
+          <ul>
+            <li>2026.07.10 · Procedural Generation of Pixel Worlds</li>
+            <li>2026.07.10 · Building This Blog for the Open Web</li>
+            <li>2026.07.08 · GLSL Shaders for Pixel Art Aesthetics</li>
+            <li>2026.07.06 · Chiptune Composition with Web Audio</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-panel">
+      <div class="footer-meta">
+        <span>Archive</span>
+        <span>&copy; <span data-current-year></span> LNOTM</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

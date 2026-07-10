@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pixel Blog icon">
+  <rect width="64" height="64" fill="#0d1117"/>
+  <rect x="8" y="8" width="48" height="48" fill="#172131" stroke="#ffd666" stroke-width="2"/>
+  <rect x="16" y="16" width="8" height="8" fill="#ffd666"/>
+  <rect x="24" y="16" width="8" height="8" fill="#7cc9ff"/>
+  <rect x="32" y="16" width="8" height="8" fill="#ff8f66"/>
+  <rect x="16" y="28" width="24" height="8" fill="#edf2f7"/>
+  <rect x="16" y="40" width="16" height="8" fill="#98a3b3"/>
+</svg>

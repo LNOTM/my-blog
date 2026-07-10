@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://lnotm.github.io/my-blog/</loc></url>
+  <url><loc>https://lnotm.github.io/my-blog/about.html</loc></url>
+  <url><loc>https://lnotm.github.io/my-blog/projects.html</loc></url>
+  <url><loc>https://lnotm.github.io/my-blog/archive.html</loc></url>
+  <url><loc>https://lnotm.github.io/my-blog/posts/procedural-generation.html</loc></url>
+  <url><loc>https://lnotm.github.io/my-blog/posts/pixel-shaders.html</loc></url>
+  <url><loc>https://lnotm.github.io/my-blog/posts/building-this-blog.html</loc></url>
+  <url><loc>https://lnotm.github.io/my-blog/posts/chiptune-web-audio.html</loc></url>
+</urlset>

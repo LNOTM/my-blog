@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Pixel Blog</title>
+  <meta name="description" content="Pixel Blog 的项目索引页，用来承接作品、版本线索与外部演示入口。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html" aria-label="Pixel Blog 首页">
+        <span class="brand-mark">PB</span>
+        <span class="brand-copy"><strong>PIXEL BLOG</strong><span>retro atmosphere, readable structure</span></span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="projects.html" aria-current="page">项目</a>
+        <a href="archive.html">归档</a>
+        <a href="templates.html">模板</a>
+        <a href="about.html">关于</a>
+        <a href="posts/building-this-blog.html">最新文章</a>
+      
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+          <span class="theme-toggle-dot" aria-hidden="true"></span>
+          <span data-theme-toggle-label>切换晴天</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="site-shell page-band">
+        <article class="page-band-copy">
+          <span class="article-kicker">PROJECT INDEX</span>
+          <h1>项目页的职责是承接持续产出，而不是让首页承担一切。</h1>
+          <p>这里可以继续扩展成截图、版本日志、演示链接和仓库链接的聚合页。现在先建立一个清晰、稳妥、适合继续迭代的作品索引层。</p>
+        </article>
+
+        <aside class="page-band-panel">
+          <span class="section-kicker">BUILD MAP</span>
+          <h3>项目页会逐步长成作品台账。</h3>
+          <div class="status-stack">
+            <div class="status-line"><strong>TYPE</strong><span>Web / Visual / Audio</span></div>
+            <div class="status-line"><strong>FLOW</strong><span>Demo -> Post -> Repo</span></div>
+            <div class="status-line"><strong>STATE</strong><span>Expandable</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="site-shell surface-grid">
+        <article class="surface-card">
+          <span class="section-kicker">PROJECTS</span>
+          <h2>项目索引把“作品”与“文章”分开，两边都会更清楚。</h2>
+          <p>文章页更适合解释思路，项目页更适合积累截图、版本节点、技术栈和演示入口。这样首页就不需要同时扮演画廊、文档和个人简介。</p>
+        </article>
+
+        <article class="surface-card">
+          <span class="section-kicker">FUTURE BLOCKS</span>
+          <h2>后续适合继续增加的模块</h2>
+          <ul>
+            <li>每个项目的时间线和关键版本截图。</li>
+            <li>GitHub 仓库、演示视频和相关文章之间的互链。</li>
+            <li>开发日志与项目更新模板的直接入口。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="site-shell">
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="post-tag">SITE</span>
+            <h3>Pixel Blog Static Rework</h3>
+            <p>这次重构的核心工作：把单页视觉 demo 改成更适合 GitHub Pages 的多页博客结构。</p>
+            <div class="project-stack"><span>Static HTML</span><span>Shared CSS</span><span>Article Pages</span></div>
+          </article>
+
+          <article class="project-card">
+            <span class="post-tag">RENDERING</span>
+            <h3>Retro Shader Notes</h3>
+            <p>围绕像素渲染质感整理的一组笔记，重点是降噪、抖动、边缘控制和“不过度脏化”的 CRT 表达。</p>
+            <div class="project-stack"><span>GLSL</span><span>Palette Study</span><span>Post FX</span></div>
+          </article>
+
+          <article class="project-card">
+            <span class="post-tag">AUDIO</span>
+            <h3>Browser Chiptune Lab</h3>
+            <p>尝试用 Web Audio 做一个轻量声景实验，让文章不只是读起来像一个小世界，也能听起来像一个小世界。</p>
+            <div class="project-stack"><span>Oscillator</span><span>Pattern</span><span>Web Audio</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-panel">
+      <div class="footer-meta">
+        <span>Project Index</span>
+        <span>&copy; <span data-current-year></span> LNOTM</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

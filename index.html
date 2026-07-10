@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Blog | A Tiny Corner of the Internet</title>
+  <meta name="description" content="一个更适合 GitHub Pages 的像素风个人博客原型，保留场景气质，也强调长期写作与稳定部署。">
+  <meta property="og:title" content="Pixel Blog">
+  <meta property="og:description" content="Pixel worlds, field notes, shaders, and a calmer scenic blog interface.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html" aria-label="Pixel Blog 首页">
+        <span class="brand-mark">PB</span>
+        <span class="brand-copy">
+          <strong>PIXEL BLOG</strong>
+          <span>retro atmosphere, readable structure</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html" aria-current="page">首页</a>
+        <a href="projects.html">项目</a>
+        <a href="archive.html">归档</a>
+        <a href="templates.html">模板</a>
+        <a href="about.html">关于</a>
+        <a href="posts/building-this-blog.html">最新文章</a>
+      
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+          <span class="theme-toggle-dot" aria-hidden="true"></span>
+          <span data-theme-toggle-label>切换晴天</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="site-shell desk-grid">
+        <aside class="side-rail side-rail-left" aria-label="左侧信息栏">
+          <article class="rail-card">
+            <span class="section-kicker">FIELD LOG</span>
+            <h3>左侧像工作台，放站点状态和阅读入口。</h3>
+            <p>保留你原来那种带点游戏桌面的感觉，但内容都是真实可用的导航和说明。</p>
+            <ul class="info-list">
+              <li>首页只负责导览，不再把整站内容都堆进首屏。</li>
+              <li>顶部和底部维持场景化气氛，中间保持阅读秩序。</li>
+              <li>两侧边栏承接状态、社交入口、发布工具和说明信息。</li>
+            </ul>
+          </article>
+
+          <article class="rail-card">
+            <span class="section-kicker">SCENE STATUS</span>
+            <h3>像素场景保留，但变成辅助层。</h3>
+            <div class="status-stack">
+              <div class="status-line"><strong>TIME</strong><span data-now-time>--:--</span></div>
+              <div class="status-line"><strong>SCENE</strong><span data-scene-name>Night</span></div>
+              <div class="status-line"><strong>SEASON</strong><span data-season-name>Summer</span></div>
+            </div>
+            <div class="mini-scene" aria-hidden="true"></div>
+          </article>
+        </aside>
+
+        <div class="center-column">
+          <article class="hero-copy">
+            <span class="eyebrow">SCENIC STATIC BLOG</span>
+            <h1>保留你原来那种像素场景风格，但把博客真正做成可以长期更新、可分享、可部署的内容站。</h1>
+            <p>顶部和底部继续维持天空、地景、像素小屋这种记忆点，两侧侧栏承接功能与外链，中间内容区只做文章和项目导览。这样既有氛围，也更像一个成熟博客。</p>
+            <div class="hero-actions">
+              <a class="button" href="posts/procedural-generation.html">阅读代表文章</a>
+              <a class="button-secondary" href="projects.html">查看项目索引</a>
+            </div>
+            <div class="utility-strip" aria-label="站点亮点">
+              <span class="utility-pill">MULTI-PAGE STRUCTURE</span>
+              <span class="utility-pill">GITHUB PAGES READY</span>
+              <span class="utility-pill">SCENIC HEADER + FOOTER</span>
+            </div>
+          </article>
+
+          <aside class="hero-panel" aria-label="首页场景预览">
+            <div class="hero-scene">
+              <span class="scene-label">PIXEL FIELD</span>
+              <div class="scene-stars" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="scene-sun" aria-hidden="true"></div>
+              <div class="scene-cloud" aria-hidden="true"></div>
+              <div class="scene-hill" aria-hidden="true"></div>
+              <div class="scene-tower" aria-hidden="true"></div>
+              <div class="scene-lantern" aria-hidden="true"></div>
+              <div class="scene-house" aria-hidden="true"></div>
+              <div class="scene-fence" aria-hidden="true"></div>
+              <div class="scene-path" aria-hidden="true"></div>
+              <p class="scene-caption">场景感继续保留在顶部和底部，但它不再抢正文戏份，而是像舞台布景一样托住博客气质。</p>
+            </div>
+            <div class="scene-toolbar">
+              <div class="stat-chip">
+                <strong>04</strong>
+                <span>独立文章页</span>
+              </div>
+              <div class="stat-chip">
+                <strong>03</strong>
+                <span>栏目页入口</span>
+              </div>
+              <div class="stat-chip">
+                <strong>100%</strong>
+                <span>静态部署友好</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <aside class="side-rail side-rail-right" aria-label="右侧功能栏">
+          <article class="rail-card">
+            <span class="section-kicker">SIGNAL TOWER</span>
+            <h3>右侧更适合放真实对外入口，而不是假交互。</h3>
+            <div class="signal-links">
+              <a class="signal-link" href="about.html#contact">
+                <strong>WECHAT</strong>
+                <span>公众号、二维码页、代表文章链接</span>
+              </a>
+              <a class="signal-link" href="about.html#contact">
+                <strong>YOUTUBE</strong>
+                <span>演示视频、短讲解和项目记录</span>
+              </a>
+              <a class="signal-link" href="about.html#contact">
+                <strong>EMAIL</strong>
+                <span>合作、反馈、正式联系入口</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="rail-card">
+            <span class="section-kicker">PUBLISHING KIT</span>
+            <h3>模板和发布清单不藏起来，直接做成创作工具。</h3>
+            <p>这样博客后续真的开始更新时，不需要每次重新组织文章结构和分发动作。</p>
+            <div class="hero-actions">
+              <a class="button-secondary" href="templates.html">打开模板中心</a>
+            </div>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="site-shell">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">FEATURED ESSAYS</span>
+            <h2>首屏直接给出文章入口，视觉只是氛围层，不再把读者困在装饰里。</h2>
+          </div>
+          <p>每篇文章都拥有自己的 URL，后续无论是 GitHub Pages 还是静态站生成器都能顺利接管。</p>
+        </div>
+
+        <div class="post-grid">
+          <article class="article-card">
+            <div class="article-illustration"><div class="glyph">WRLD</div></div>
+            <div class="article-card-body">
+              <span class="post-tag">WORLD BUILDING</span>
+              <h3><a href="posts/procedural-generation.html">Procedural Generation of Pixel Worlds</a></h3>
+              <p>把无限地形、噪声和小型叙事结合起来，做出一个“像地点而不是背景”的像素世界。</p>
+              <div class="card-footer">
+                <div class="post-meta">
+                  <span>2026.07.10</span>
+                  <span>8 min read</span>
+                </div>
+                <a class="read-link" href="posts/procedural-generation.html">READ</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-illustration"><div class="glyph">SHDR</div></div>
+            <div class="article-card-body">
+              <span class="post-tag">SHADERS</span>
+              <h3><a href="posts/pixel-shaders.html">GLSL Shaders for Pixel Art Aesthetics</a></h3>
+              <p>从 CRT、抖动和色板约束出发，讲清楚怎样把现代渲染调成复古而不过度滤镜化。</p>
+              <div class="card-footer">
+                <div class="post-meta">
+                  <span>2026.07.08</span>
+                  <span>10 min read</span>
+                </div>
+                <a class="read-link" href="posts/pixel-shaders.html">READ</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-illustration"><div class="glyph">LOG</div></div>
+            <div class="article-card-body">
+              <span class="post-tag">BUILD NOTES</span>
+              <h3><a href="posts/building-this-blog.html">Building This Blog for the Open Web</a></h3>
+              <p>记录这次从“炫技单页 demo”转向“真实博客产品”的改造思路，包括信息架构和部署策略。</p>
+              <div class="card-footer">
+                <div class="post-meta">
+                  <span>2026.07.10</span>
+                  <span>7 min read</span>
+                </div>
+                <a class="read-link" href="posts/building-this-blog.html">READ</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-illustration"><div class="glyph">SND</div></div>
+            <div class="article-card-body">
+              <span class="post-tag">AUDIO</span>
+              <h3><a href="posts/chiptune-web-audio.html">Chiptune Composition with Web Audio</a></h3>
+              <p>用浏览器里的振荡器和简单音序器拼出 8-bit 情绪，同时讨论什么时候该停在“够用”而不是“堆满功能”。</p>
+              <div class="card-footer">
+                <div class="post-meta">
+                  <span>2026.07.06</span>
+                  <span>6 min read</span>
+                </div>
+                <a class="read-link" href="posts/chiptune-web-audio.html">READ</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="site-shell surface-grid">
+        <article class="surface-card">
+          <span class="section-kicker">WHY THIS VERSION</span>
+          <h2>这版更适合上线，不是因为“更花”，而是因为结构终于站稳了。</h2>
+          <ul>
+            <li>文章是真正的独立页面，不再依赖浮层内容。</li>
+            <li>保留像素风，但正文排版、间距和信息层级更适合长期阅读。</li>
+            <li>场景化视觉被安放到合适位置，不压过内容本身。</li>
+            <li>目录结构天然适合 GitHub Pages，也方便以后切到静态站生成器。</li>
+          </ul>
+        </article>
+
+        <div class="mini-grid">
+          <article class="mini-card">
+            <span class="section-kicker">CONTENT SYSTEM</span>
+            <h3>从“页面特效”转向“长期写作系统”</h3>
+            <p>首页负责筛选与导览，文章页负责沉浸阅读，项目页负责展示持续产出，模板页负责发表效率。每一页都开始有自己的职责。</p>
+          </article>
+
+          <article class="mini-card">
+            <span class="section-kicker">NEXT STEP</span>
+            <h3>后续最值得接入的是评论、分发和真实链接体系</h3>
+            <p>例如 Giscus、RSS、公众号落地页、YouTube 频道和真实邮箱。这样博客会从“能看”进一步变成“能维护、能传播”。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="site-shell">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">PROJECT LOG</span>
+            <h2>项目页承接作品，侧栏负责状态与链接，首页终于可以只做气氛与导览。</h2>
+          </div>
+          <a class="chip-link" href="projects.html">打开项目索引</a>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="post-tag">WEB</span>
+            <h3>Pixel Blog Rework</h3>
+            <p>把最初的像素博客概念整理成一个真正可部署的静态站，用更稳的结构承接长期内容更新。</p>
+            <div class="project-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>GitHub Pages</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="post-tag">VISUALS</span>
+            <h3>CRT Shader Study</h3>
+            <p>围绕像素美术风格做的一组渲染实验，重点是“味道”而不是一味模拟旧设备缺陷。</p>
+            <div class="project-stack">
+              <span>GLSL</span>
+              <span>Palette</span>
+              <span>Dithering</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="post-tag">AUDIO</span>
+            <h3>Browser Chiptune Sketches</h3>
+            <p>一个轻量的 Web Audio 草图集，尝试把简单乐段和网页叙事结合起来，给文章增加听觉记忆点。</p>
+            <div class="project-stack">
+              <span>Web Audio</span>
+              <span>Sequencer</span>
+              <span>UX</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-panel">
+      <div class="footer-grid">
+        <section>
+          <span class="section-kicker">ABOUT THIS SITE</span>
+          <h2>像素场景留在舞台上，博客逻辑重新做对。</h2>
+          <p>这一版更接近一个真实博客的起点：文章可独立访问、项目有单独入口、导航清晰、视觉统一，而且没有会误导访客的假交互。</p>
+          <div class="footer-actions">
+            <a class="button" href="about.html">查看关于页</a>
+            <a class="button-secondary" href="https://github.com/LNOTM/my-blog" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        </section>
+
+        <section class="footer-list">
+          <a class="chip-link" href="posts/building-this-blog.html">阅读改造说明</a>
+          <a class="chip-link" href="projects.html">项目索引</a>
+          <a class="chip-link" href="archive.html">文章归档</a>
+          <a class="chip-link" href="about.html#contact">联系与后续集成</a>
+        </section>
+      </div>
+
+      <div class="footer-meta">
+        <span>Pixel Blog Prototype</span>
+        <span>&copy; <span data-current-year></span> LNOTM</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
