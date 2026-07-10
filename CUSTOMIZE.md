@@ -3,9 +3,9 @@
 ## 第一批必须替换的占位内容
 
 ### about.html
-- `待补：公众号名称 / 文章链接 / 二维码页`
-- `待补：https://youtube.com/@your-channel`
-- `待补：hello@example.com`
+- 微信二维码：已收到二维码图片，建议后续保存到 `assets/` 并在页面中直接展示。
+- YouTube 频道：已设置为 `https://www.youtube.com/@LNTOM-L`
+- 联系入口：已改为 GitHub Issues。
 
 ### 全站署名
 - 页脚当前为 `LNOTM`
