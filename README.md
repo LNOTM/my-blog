@@ -1,49 +1,54 @@
 # LNOTM / my-blog
 
-一个适合 GitHub Pages 的静态个人博客成品目录，保留像素场景气质、文章页阅读体验，以及暮色 / 晴天主题切换。
+一个部署在 GitHub Pages 上的静态个人博客，保留像素场景气质、文章页阅读体验，以及暮色 / 晴天主题切换。
 
-## 当前包含
+## 当前公开页面
 
-- 多页面静态站：首页、项目页、归档页、模板页、关于页、404 页
-- 4 篇示例文章和文章页目录 / 阅读进度
-- RSS、sitemap、robots、manifest
-- 主题切换：默认暮色，可切换晴天并记住选择
-- 内容模板：技术文章模板、项目更新模板、发布检查清单、社交链接样例
-- GitHub Pages 自动部署工作流
-
-## 仓库结构
-
-- `index.html`：首页
-- `about.html`：关于与联系方式结构
-- `projects.html`：项目入口页
-- `archive.html`：归档页
-- `templates.html`：模板中心
+- `index.html`：首页，负责导览和精选内容
+- `projects.html`：项目页，只维护真实项目和作品入口
+- `archive.html`：归档页，集中维护全部文章入口
+- `about.html`：关于页，集中维护联系方式和社交链接
 - `posts/`：文章页面
-- `assets/`：样式、脚本、图标
-- `content-templates/`：写作和发布模板
+- `404.html`：错误页
+
+## 内部管理文件
+
+- `content-templates/`：写作模板和发布检查清单，不作为公开导航入口
+- `templates.html`：旧模板中心页面，暂时保留但不再从导航展示
+- `CUSTOMIZE.md`：站点个性化检查清单
+- `PUBLISHING.md`：发布检查说明
 - `.github/workflows/deploy-pages.yml`：GitHub Pages 自动部署
 
-## 发布前建议先替换
+## 日常管理流程
 
-1. `about.html` 中的公众号、YouTube、邮箱占位信息
-2. `feed.xml`、`sitemap.xml` 中的站点链接（如果仓库名或域名变化）
-3. `site.webmanifest` 中的站点标题与主题色（如果你后续想微调）
-4. 示例文章内容、作者信息与版权信息
+### 发布新文章
+
+1. 从 `content-templates/technical-article-template.md` 复制结构起草文章。
+2. 新建 `posts/<slug>.html`，把文章正文整理成正式页面。
+3. 在 `archive.html` 增加文章入口。
+4. 如果文章适合作为精选内容，再更新 `index.html` 的文章卡片。
+5. 更新 `feed.xml` 和 `sitemap.xml`。
+6. 提交并 push 到 `main`，GitHub Actions 会自动发布。
+
+### 更新项目
+
+1. 只在 `projects.html` 维护项目卡片。
+2. 每个项目卡片保留：项目名、简短说明、技术栈、仓库或演示入口。
+3. 文章里可以链接项目，但不要重复维护项目详情。
+
+### 更新联系方式
+
+1. 只在 `about.html` 维护 GitHub、YouTube、微信、反馈入口。
+2. 如果后续要展示微信二维码，把图片放到 `assets/`，再从 `about.html` 引用。
 
 ## GitHub Pages 发布方式
 
-### 方式一：GitHub Actions 自动部署
+1. 推送到 `main` 分支。
+2. GitHub Actions 自动运行 `.github/workflows/deploy-pages.yml`。
+3. 发布地址：`https://lnotm.github.io/my-blog/`
 
-1. 把这个目录内容放到仓库根目录。
-2. 推送到 `main` 分支。
-3. 在 GitHub 仓库设置里打开 `Pages`。
-4. Source 选择 `GitHub Actions`。
-5. 之后每次 push 到 `main` 都会自动发布。
+## GitHub 仓库 About 建议
 
-### 方式二：直接从仓库根目录发布
-
-1. 把这个目录内容放到仓库根目录。
-2. 在 `Settings > Pages` 里选择从分支部署。
-3. 选择 `main` 分支和 `/ (root)`。
-
-如果你准备让我直接帮你推送到仓库，下一步只需要给我一个新的 GitHub token，我会在这套目录基础上继续完成仓库发布。
+- Description：`A static personal blog built for GitHub Pages.`
+- Website：`https://lnotm.github.io/my-blog/`
+- Topics：`blog`, `github-pages`, `static-site`, `html`, `css`, `personal-website`
