@@ -1,33 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
     <title>Pixel Blog</title>
     <link>https://lnotm.github.io/my-blog/</link>
-    <description>A tiny corner of the internet about pixel worlds, shaders, and creative coding.</description>
+    <description>LNOTM 的个人博客，正式文章发布后会在这里同步 RSS。</description>
     <language>zh-CN</language>
-    <item>
-      <title>Procedural Generation of Pixel Worlds</title>
-      <link>https://lnotm.github.io/my-blog/posts/procedural-generation.html</link>
-      <description>让程序生成的像素世界更像可停留的地点，而不是背景贴图。</description>
-      <pubDate>Fri, 10 Jul 2026 09:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Building This Blog for the Open Web</title>
-      <link>https://lnotm.github.io/my-blog/posts/building-this-blog.html</link>
-      <description>从单页 demo 到静态博客结构的重构记录。</description>
-      <pubDate>Fri, 10 Jul 2026 10:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>GLSL Shaders for Pixel Art Aesthetics</title>
-      <link>https://lnotm.github.io/my-blog/posts/pixel-shaders.html</link>
-      <description>在像素语境下使用 shader 时，怎样避免复古滤镜化。</description>
-      <pubDate>Wed, 08 Jul 2026 10:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Chiptune Composition with Web Audio</title>
-      <link>https://lnotm.github.io/my-blog/posts/chiptune-web-audio.html</link>
-      <description>Web Audio 在个人博客里的合适边界和表达方式。</description>
-      <pubDate>Mon, 06 Jul 2026 10:00:00 GMT</pubDate>
-    </item>
   </channel>
 </rss>
