@@ -5,7 +5,8 @@
 ## 当前公开页面
 
 - `index.html`：首页，负责导览和精选内容
-- `projects.html`：项目页，只维护真实项目和作品入口
+- `projects.html`：项目页，维护真实项目，也提供模板展示入口
+- `templates.html`：模板展示页，说明示例博客结构和可复用发布流程
 - `archive.html`：归档页，集中维护全部文章入口
 - `about.html`：关于页，集中维护联系方式和社交链接
 - `posts/`：文章页面
@@ -13,8 +14,7 @@
 
 ## 内部管理文件
 
-- `content-templates/`：写作模板和发布检查清单，不作为公开导航入口
-- `templates.html`：旧模板中心页面，暂时保留但不再从导航展示
+- `content-templates/`：写作模板和发布检查清单，供 `templates.html` 展示，也供自己写作复用
 - `CUSTOMIZE.md`：站点个性化检查清单
 - `PUBLISHING.md`：发布检查说明
 - `.github/workflows/deploy-pages.yml`：GitHub Pages 自动部署
@@ -32,9 +32,10 @@
 
 ### 更新项目
 
-1. 只在 `projects.html` 维护项目卡片。
+1. 在 `projects.html` 维护真实项目卡片。
 2. 每个项目卡片保留：项目名、简短说明、技术栈、仓库或演示入口。
 3. 文章里可以链接项目，但不要重复维护项目详情。
+4. `templates.html` 作为模板展示入口保留，方便别人理解这个博客的结构设计。
 
 ### 更新联系方式
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Pixel Blog</title>
-  <meta name="description" content="Pixel Blog 的项目索引页，用来承接作品、版本线索与外部演示入口。">
+  <meta name="description" content="LNOTM Blog 的项目索引页，集中展示博客本身、模板设计支撑和后续项目入口。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,6 +25,7 @@
         <a href="index.html">首页</a>
         <a href="projects.html" aria-current="page">项目</a>
         <a href="archive.html">归档</a>
+        <a href="templates.html">模板</a>
         <a href="about.html">关于</a>
         <a href="posts/building-this-blog.html">最新文章</a>
 
@@ -41,17 +42,17 @@
       <div class="site-shell page-band">
         <article class="page-band-copy">
           <span class="article-kicker">PROJECT INDEX</span>
-          <h1>项目页的职责是承接持续产出，而不是让首页承担一切。</h1>
-          <p>这里可以继续扩展成截图、版本日志、演示链接和仓库链接的聚合页。现在先建立一个清晰、稳妥、适合继续迭代的作品索引层。</p>
+          <h1>这里放真实项目和博客设计支撑，不再混放示例项目。</h1>
+          <p>项目页现在只承担一个职责：让访客快速看到这个博客本身、可复用模板设计，以及后续会逐步补充的真实项目。</p>
         </article>
 
         <aside class="page-band-panel">
           <span class="section-kicker">BUILD MAP</span>
-          <h3>项目页会逐步长成作品台账。</h3>
+          <h3>当前项目入口保持少而清楚。</h3>
           <div class="status-stack">
-            <div class="status-line"><strong>TYPE</strong><span>Web / Visual / Audio</span></div>
-            <div class="status-line"><strong>FLOW</strong><span>Demo -> Post -> Repo</span></div>
-            <div class="status-line"><strong>STATE</strong><span>Expandable</span></div>
+            <div class="status-line"><strong>BLOG</strong><span>正式站点</span></div>
+            <div class="status-line"><strong>KIT</strong><span>模板设计支撑</span></div>
+            <div class="status-line"><strong>NEXT</strong><span>后续项目整理中</span></div>
           </div>
         </aside>
       </div>
@@ -60,19 +61,15 @@
     <section class="section">
       <div class="site-shell surface-grid">
         <article class="surface-card">
-          <span class="section-kicker">PROJECTS</span>
-          <h2>项目索引把“作品”与“文章”分开，两边都会更清楚。</h2>
-          <p>文章页更适合解释思路，项目页更适合积累截图、版本节点、技术栈和演示入口。这样首页就不需要同时扮演画廊、文档和个人简介。</p>
+          <span class="section-kicker">MANAGEMENT RULE</span>
+          <h2>正式项目只放这里，文章解释过程，首页只做精选导览。</h2>
+          <p>这样以后更新博客时不会到处重复改同一件事：项目页维护项目，归档页维护文章，关于页维护联系入口。</p>
         </article>
 
         <article class="surface-card">
-          <span class="section-kicker">FUTURE BLOCKS</span>
-          <h2>后续适合继续增加的模块</h2>
-          <ul>
-            <li>每个项目的时间线和关键版本截图。</li>
-            <li>GitHub 仓库、演示视频和相关文章之间的互链。</li>
-            <li>开发日志、演示视频和相关文章之间的互链。</li>
-          </ul>
+          <span class="section-kicker">TEMPLATE SUPPORT</span>
+          <h2>示例模板不是正式内容，而是给别人看的设计支撑。</h2>
+          <p>如果访客想了解这个博客如何组织文章、项目和发布流程，可以从项目页进入模板展示页。</p>
         </article>
       </div>
     </section>
@@ -81,24 +78,31 @@
       <div class="site-shell">
         <div class="project-grid">
           <article class="project-card">
-            <span class="post-tag">SITE</span>
-            <h3>Pixel Blog Static Rework</h3>
-            <p>这次重构的核心工作：把单页视觉 demo 改成更适合 GitHub Pages 的多页博客结构。</p>
-            <div class="project-stack"><span>Static HTML</span><span>Shared CSS</span><span>Article Pages</span></div>
+            <span class="post-tag">LIVE SITE</span>
+            <h3>LNOTM Blog</h3>
+            <p>当前正在运行的个人博客，用 GitHub Pages 托管，负责承接文章、项目记录和社交入口。</p>
+            <div class="project-stack"><span>GitHub Pages</span><span>Static HTML</span><span>Personal Blog</span></div>
+            <div class="hero-actions">
+              <a class="button" href="index.html">打开首页</a>
+              <a class="button-secondary" href="https://github.com/LNOTM/my-blog" target="_blank" rel="noopener noreferrer">查看仓库</a>
+            </div>
           </article>
 
           <article class="project-card">
-            <span class="post-tag">RENDERING</span>
-            <h3>Retro Shader Notes</h3>
-            <p>围绕像素渲染质感整理的一组笔记，重点是降噪、抖动、边缘控制和“不过度脏化”的 CRT 表达。</p>
-            <div class="project-stack"><span>GLSL</span><span>Palette Study</span><span>Post FX</span></div>
+            <span class="post-tag">TEMPLATE KIT</span>
+            <h3>Blog Template Kit</h3>
+            <p>保留示例博客结构、文章模板和发布清单，作为这个博客的设计支撑和可复用说明。</p>
+            <div class="project-stack"><span>Article Template</span><span>Project Update</span><span>Publish Checklist</span></div>
+            <div class="hero-actions">
+              <a class="button" href="templates.html">查看模板展示</a>
+            </div>
           </article>
 
           <article class="project-card">
-            <span class="post-tag">AUDIO</span>
-            <h3>Browser Chiptune Lab</h3>
-            <p>尝试用 Web Audio 做一个轻量声景实验，让文章不只是读起来像一个小世界，也能听起来像一个小世界。</p>
-            <div class="project-stack"><span>Oscillator</span><span>Pattern</span><span>Web Audio</span></div>
+            <span class="post-tag">COMING SOON</span>
+            <h3>后续项目整理中</h3>
+            <p>这里会逐步补充真实项目、演示视频、相关文章和仓库入口。暂时不再使用虚构示例项目占位。</p>
+            <div class="project-stack"><span>Real Project</span><span>Demo</span><span>Article Link</span></div>
           </article>
         </div>
       </div>
