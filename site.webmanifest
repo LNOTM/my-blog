@@ -1,6 +1,6 @@
 {
-  "name": "Pixel Blog",
-  "short_name": "PixelBlog",
+  "name": "LNOTM",
+  "short_name": "LNOTM",
   "start_url": "/my-blog/",
   "display": "standalone",
   "background_color": "#edf6ff",

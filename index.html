@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixel Blog | A Tiny Corner of the Internet</title>
-  <meta name="description" content="一个更适合 GitHub Pages 的像素风个人博客原型，保留场景气质，也强调长期写作与稳定部署。">
-  <meta property="og:title" content="Pixel Blog">
-  <meta property="og:description" content="Pixel worlds, field notes, shaders, and a calmer scenic blog interface.">
+  <title>LNOTM | Pixel Worlds, Shaders & Web Audio</title>
+  <meta name="description" content="LNOTM 的个人博客，记录像素世界、shader、Web Audio 与创意编码实验。">
+  <meta property="og:title" content="LNOTM">
+  <meta property="og:description" content="Pixel worlds, shaders, sound experiments, and creative coding notes.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,18 +21,17 @@
 
   <header class="site-header">
     <div class="site-header-inner">
-      <a class="brand" href="index.html" aria-label="Pixel Blog 首页">
-        <span class="brand-mark">PB</span>
+      <a class="brand" href="index.html" aria-label="LNOTM 首页">
+        <span class="brand-mark">LN</span>
         <span class="brand-copy">
-          <strong>PIXEL BLOG</strong>
-          <span>retro atmosphere, readable structure</span>
+          <strong>LNOTM</strong>
+          <span>pixels · shaders · sound</span>
         </span>
       </a>
       <nav class="site-nav" aria-label="主导航">
         <a href="index.html" aria-current="page">首页</a>
         <a href="projects.html">项目</a>
         <a href="archive.html">归档</a>
-        <a href="templates.html">模板</a>
         <a href="about.html">关于</a>
 
         <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
@@ -46,21 +45,20 @@
   <main id="main">
     <section class="hero">
       <div class="site-shell desk-grid">
-        <aside class="side-rail side-rail-left" aria-label="左侧信息栏">
+        <aside class="side-rail side-rail-left" aria-label="个人简介">
           <article class="rail-card">
-            <span class="section-kicker">FIELD LOG</span>
-            <h3>左侧汇总站点状态和常用入口。</h3>
-            <p>这里放我常看的几类内容：最近在写什么、当前主题状态、以及可以直接跳转的板块入口。</p>
+            <span class="section-kicker">PLAYER PROFILE</span>
+            <h3>LNOTM</h3>
+            <p>喜欢像素画面、实时图形和浏览器声音实验，也会记录项目里那些值得留下的细节。</p>
             <ul class="info-list">
-              <li>首页只做导览和精选，不堆叠全部内容。</li>
-              <li>顶部和底部维持像素场景气氛，中间保持阅读秩序。</li>
-              <li>左右边栏承接状态、社交入口和常用链接。</li>
+              <li>Pixel worlds</li>
+              <li>Shaders &amp; creative coding</li>
+              <li>Web Audio &amp; small tools</li>
             </ul>
           </article>
 
           <article class="rail-card">
             <span class="section-kicker">SCENE STATUS</span>
-            <h3>像素场景保留在装饰层，不干扰正文。</h3>
             <div class="status-stack">
               <div class="status-line"><strong>TIME</strong><span data-now-time>--:--</span></div>
               <div class="status-line"><strong>SCENE</strong><span data-scene-name>Night</span></div>
@@ -72,28 +70,25 @@
 
         <div class="center-column">
           <article class="hero-copy">
-            <span class="eyebrow">LNOTM · PIXEL BLOG</span>
-            <h1>我在这里记录像素世界、shader 和 Web Audio 的实验笔记。</h1>
-            <p>博客保持像素场景气质，同时把文章、项目、模板和联系入口分开维护，方便长期更新。你可以从下面的入口直接进入文章归档或项目索引。</p>
+            <span class="eyebrow">LNOTM · FIELD NOTES</span>
+            <h1>记录像素世界、shader 和 Web Audio 的实验过程。</h1>
+            <p>这里收集我做过的视觉实验、声音草图、项目复盘和偶尔冒出来的小工具。内容不追求固定频率，只留下真正值得回看的部分。</p>
             <div class="hero-actions">
-              <a class="button" href="archive.html">进入文章归档</a>
-              <a class="button-secondary" href="projects.html">查看项目索引</a>
+              <a class="button" href="archive.html">阅读文章</a>
+              <a class="button-secondary" href="projects.html">查看项目</a>
             </div>
-            <div class="utility-strip" aria-label="站点亮点">
+            <div class="utility-strip" aria-label="关注主题">
               <span class="utility-pill">PIXEL WORLDS</span>
               <span class="utility-pill">SHADER NOTES</span>
               <span class="utility-pill">WEB AUDIO</span>
             </div>
           </article>
 
-          <aside class="hero-panel" aria-label="首页场景预览">
+          <aside class="hero-panel" aria-label="像素场景">
             <div class="hero-scene">
               <span class="scene-label">PIXEL FIELD</span>
               <div class="scene-stars" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span><span></span>
               </div>
               <div class="scene-sun" aria-hidden="true"></div>
               <div class="scene-cloud" aria-hidden="true"></div>
@@ -103,51 +98,33 @@
               <div class="scene-house" aria-hidden="true"></div>
               <div class="scene-fence" aria-hidden="true"></div>
               <div class="scene-path" aria-hidden="true"></div>
-              <p class="scene-caption">像素场景作为舞台布景，负责氛围而不是抢正文。</p>
+              <p class="scene-caption">一块安静的像素空地，用来存放还在生长的想法。</p>
             </div>
             <div class="scene-toolbar">
-              <div class="stat-chip">
-                <strong>00</strong>
-                <span>正式文章数</span>
-              </div>
-              <div class="stat-chip">
-                <strong>03</strong>
-                <span>栏目页入口</span>
-              </div>
-              <div class="stat-chip">
-                <strong>100%</strong>
-                <span>静态部署友好</span>
-              </div>
+              <div class="stat-chip"><strong>00</strong><span>文章</span></div>
+              <div class="stat-chip"><strong>01</strong><span>公开项目</span></div>
+              <div class="stat-chip"><strong>ON</strong><span>持续更新</span></div>
             </div>
           </aside>
         </div>
 
-        <aside class="side-rail side-rail-right" aria-label="右侧功能栏">
+        <aside class="side-rail side-rail-right" aria-label="外部链接">
           <article class="rail-card">
             <span class="section-kicker">SIGNAL TOWER</span>
-            <h3>常用外部入口</h3>
+            <h3>在别处找到我</h3>
             <div class="signal-links">
-              <a class="signal-link" href="about.html#contact">
-                <strong>WECHAT</strong>
-                <span>读者交流与项目沟通</span>
+              <a class="signal-link" href="https://github.com/LNOTM" target="_blank" rel="noopener noreferrer">
+                <strong>GITHUB</strong>
+                <span>代码、项目与版本记录</span>
               </a>
               <a class="signal-link" href="https://www.youtube.com/@LNTOM-L" target="_blank" rel="noopener noreferrer">
                 <strong>YOUTUBE</strong>
-                <span>演示视频、短讲解和项目记录</span>
+                <span>演示视频与项目片段</span>
               </a>
               <a class="signal-link" href="https://github.com/LNOTM/my-blog/issues" target="_blank" rel="noopener noreferrer">
-                <strong>ISSUES</strong>
-                <span>问题反馈与内容建议</span>
+                <strong>CONTACT</strong>
+                <span>通过 Issues 留言</span>
               </a>
-            </div>
-          </article>
-
-          <article class="rail-card">
-            <span class="section-kicker">TEMPLATE KIT</span>
-            <h3>博客模板保留为公开支撑，别人可以直接查看结构。</h3>
-            <p>如果访客想了解这个站点的文章结构、项目结构和发布流程，可以从模板展示页进入查看。</p>
-            <div class="hero-actions">
-              <a class="button-secondary" href="templates.html">查看模板展示</a>
             </div>
           </article>
         </aside>
@@ -158,29 +135,18 @@
       <div class="site-shell">
         <div class="section-header">
           <div>
-            <span class="section-kicker">FEATURED ESSAYS</span>
-            <h2>正式博客内容整理中，首批文章会陆续放到归档页。</h2>
+            <span class="section-kicker">LATEST NOTES</span>
+            <h2>文章还在路上。</h2>
           </div>
-          <p>示例文章已经清空，避免访客把演示内容当成正式作品。等有正式文章之后，这里会成为精选卡片入口。</p>
+          <a class="chip-link" href="archive.html">打开归档</a>
         </div>
-
-        <div class="post-grid">
-          <article class="article-card">
-            <div class="article-illustration"><div class="glyph">SOON</div></div>
-            <div class="article-card-body">
-              <span class="post-tag">COMING SOON</span>
-              <h3>第一篇正式文章准备中</h3>
-              <p>发布后会同步更新归档页、RSS 和 sitemap，首页也会补上正式的精选卡片。</p>
-              <div class="card-footer">
-                <div class="post-meta">
-                  <span>草稿阶段</span>
-                  <span>待发布</span>
-                </div>
-                <a class="read-link" href="archive.html">进入归档</a>
-              </div>
-            </div>
-          </article>
-        </div>
+        <article class="surface-card">
+          <h3>第一批笔记正在整理</h3>
+          <p>等一篇内容真正完成，它会出现在这里。现在可以先从项目页了解我正在维护的内容。</p>
+          <div class="hero-actions">
+            <a class="button-secondary" href="projects.html">前往项目页</a>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -188,43 +154,21 @@
       <div class="site-shell">
         <div class="section-header">
           <div>
-            <span class="section-kicker">PROJECT LOG</span>
-            <h2>项目索引展示当前在做的作品，正文文章负责解释背后的思路。</h2>
+            <span class="section-kicker">PROJECT</span>
+            <h2>正在维护的项目</h2>
           </div>
-          <a class="chip-link" href="projects.html">打开项目索引</a>
+          <a class="chip-link" href="projects.html">查看全部</a>
         </div>
-
         <div class="project-grid">
           <article class="project-card">
-            <span class="post-tag">LIVE SITE</span>
+            <span class="post-tag">LIVE</span>
             <h3>LNOTM Blog</h3>
-            <p>当前正在运行的个人博客，用 GitHub Pages 托管，承接文章、项目记录和外部联系入口。</p>
+            <p>这个像素风个人站，用来发布文章、实验记录和项目进展。</p>
             <div class="project-stack">
-              <span>GitHub Pages</span>
-              <span>Static HTML</span>
-              <span>Personal Blog</span>
+              <span>GitHub Pages</span><span>HTML / CSS</span><span>JavaScript</span>
             </div>
-          </article>
-
-          <article class="project-card">
-            <span class="post-tag">TEMPLATE KIT</span>
-            <h3>Blog Template Kit</h3>
-            <p>保留示例博客结构、文章模板和发布清单，作为这个博客的设计支撑和可复用说明。</p>
-            <div class="project-stack">
-              <span>Article Template</span>
-              <span>Project Update</span>
-              <span>Publish Checklist</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <span class="post-tag">COMING SOON</span>
-            <h3>后续项目整理中</h3>
-            <p>正式项目会陆续补上截图、演示视频、相关文章和仓库入口。暂时不再放虚构示例项目。</p>
-            <div class="project-stack">
-              <span>Real Project</span>
-              <span>Demo</span>
-              <span>Article Link</span>
+            <div class="hero-actions">
+              <a class="button-secondary" href="https://github.com/LNOTM/my-blog" target="_blank" rel="noopener noreferrer">查看源码</a>
             </div>
           </article>
         </div>
@@ -234,21 +178,11 @@
     <section class="section">
       <div class="site-shell surface-grid">
         <article class="surface-card">
-          <span class="section-kicker">ABOUT LNOTM</span>
-          <h2>这里是 LNOTM 的个人博客，我在这里写像素、shader 和创意编码。</h2>
-          <p>如果想了解博客定位、内容方向和后续计划，可以打开关于页；那里也有联系方式和外部渠道入口。</p>
+          <span class="section-kicker">ABOUT</span>
+          <h2>关于 LNOTM</h2>
+          <p>我关注像素世界、实时图形、声音与网页之间的交叉地带。关于页里有更完整的介绍和联系入口。</p>
           <div class="hero-actions">
-            <a class="button" href="about.html">进入关于页</a>
-            <a class="button-secondary" href="about.html#contact">查看联系入口</a>
-          </div>
-        </article>
-
-        <article class="surface-card">
-          <span class="section-kicker">DESIGN SUPPORT</span>
-          <h2>模板展示页保留博客的结构说明。</h2>
-          <p>如果访客想复用这套目录结构或者查看博客的设计支撑，可以从模板页打开对应的模板文件。</p>
-          <div class="hero-actions">
-            <a class="button-secondary" href="templates.html">查看模板展示</a>
+            <a class="button" href="about.html">了解更多</a>
           </div>
         </article>
       </div>
@@ -259,25 +193,18 @@
     <div class="footer-panel">
       <div class="footer-grid">
         <section>
-          <span class="section-kicker">ABOUT THIS SITE</span>
-          <h2>像素场景留在舞台上，博客逻辑重新做对。</h2>
-          <p>这一版更接近一个真实博客的起点：文章可独立访问、项目有单独入口、导航清晰、视觉统一，而且没有会误导访客的假交互。</p>
-          <div class="footer-actions">
-            <a class="button" href="about.html">查看关于页</a>
-            <a class="button-secondary" href="https://github.com/LNOTM/my-blog" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-          </div>
+          <span class="section-kicker">LNOTM</span>
+          <h2>把实验做成可以回看的记录。</h2>
+          <p>像素、光影、声音，以及它们在浏览器里相遇的方式。</p>
         </section>
-
         <section class="footer-list">
-          <a class="chip-link" href="projects.html">项目索引</a>
           <a class="chip-link" href="archive.html">文章归档</a>
-          <a class="chip-link" href="templates.html">模板展示</a>
-          <a class="chip-link" href="about.html#contact">联系与反馈入口</a>
+          <a class="chip-link" href="projects.html">项目</a>
+          <a class="chip-link" href="about.html">关于与联系</a>
         </section>
       </div>
-
       <div class="footer-meta">
-        <span>Pixel Blog Prototype</span>
+        <span>LNOTM · Personal Blog</span>
         <span id="busuanzi_container_site_pv">总访问 <span id="busuanzi_value_site_pv"></span></span>
         <span id="busuanzi_container_site_uv">访客 <span id="busuanzi_value_site_uv"></span></span>
         <span>MIT License &copy; <span data-current-year></span> LNOTM</span>

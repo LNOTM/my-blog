@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Pixel Blog</title>
-  <meta name="description" content="关于 Pixel Blog 的内容方向、设计原则、社交链接结构与后续 GitHub 部署建议。">
+  <title>关于 LNOTM</title>
+  <meta name="description" content="关于 LNOTM：像素世界、shader、Web Audio 与创意编码。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -17,17 +17,15 @@
 
   <header class="site-header">
     <div class="site-header-inner">
-      <a class="brand" href="index.html" aria-label="Pixel Blog 首页">
-        <span class="brand-mark">PB</span>
-        <span class="brand-copy"><strong>PIXEL BLOG</strong><span>retro atmosphere, readable structure</span></span>
+      <a class="brand" href="index.html" aria-label="LNOTM 首页">
+        <span class="brand-mark">LN</span>
+        <span class="brand-copy"><strong>LNOTM</strong><span>pixels · shaders · sound</span></span>
       </a>
       <nav class="site-nav" aria-label="主导航">
         <a href="index.html">首页</a>
         <a href="projects.html">项目</a>
         <a href="archive.html">归档</a>
-        <a href="templates.html">模板</a>
         <a href="about.html" aria-current="page">关于</a>
-      
         <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
           <span class="theme-toggle-dot" aria-hidden="true"></span>
           <span data-theme-toggle-label>切换晴天</span>
@@ -41,22 +39,21 @@
       <div class="site-shell page-band">
         <article class="page-band-copy">
           <span class="article-kicker">ABOUT</span>
-          <h1>关于 LNOTM 与这个博客</h1>
-          <p>我是 LNOTM，博客用来记录像素世界构建、shader 实验、Web Audio 草图和相关项目日志。这一页集中放定位说明、内容方向、联系入口，以及后续会继续接入的服务。</p>
+          <h1>你好，我是 LNOTM。</h1>
+          <p>我喜欢在像素画面、实时图形、声音和浏览器之间做实验。这个博客是我的长期记录：写下过程、保留判断，也展示最终做出来的东西。</p>
           <div class="utility-strip">
             <span class="utility-pill">PIXEL WORLDS</span>
             <span class="utility-pill">SHADER STUDIES</span>
-            <span class="utility-pill">WEB AUDIO SKETCHES</span>
+            <span class="utility-pill">WEB AUDIO</span>
           </div>
         </article>
 
         <aside class="page-band-panel">
-          <span class="section-kicker">PROFILE PANEL</span>
-          <h3>快速了解博客当前状态</h3>
+          <span class="section-kicker">PROFILE</span>
           <div class="status-stack">
-            <div class="status-line"><strong>FOCUS</strong><span>Pixel worlds / shaders / tools</span></div>
-            <div class="status-line"><strong>FORMAT</strong><span>Blog + Projects + Templates</span></div>
-            <div class="status-line"><strong>STATUS</strong><span>Live on GitHub Pages</span></div>
+            <div class="status-line"><strong>NAME</strong><span>LNOTM</span></div>
+            <div class="status-line"><strong>FOCUS</strong><span>Visuals / sound / web</span></div>
+            <div class="status-line"><strong>STATUS</strong><span>Making &amp; writing</span></div>
           </div>
         </aside>
       </div>
@@ -66,24 +63,13 @@
       <div class="site-shell desk-grid">
         <aside class="side-rail side-rail-left">
           <article class="rail-card">
-            <span class="section-kicker">WRITING DIRECTION</span>
-            <h3>内容方向</h3>
+            <span class="section-kicker">INTERESTS</span>
+            <h3>我关注的方向</h3>
             <ul class="info-list">
-              <li>像素世界构建：地图、地形、天气、叙事空间。</li>
-              <li>创意编码：shader、调色板、渲染策略、交互细节。</li>
-              <li>个人项目日志：设计选择、踩坑记录、版本演进。</li>
-              <li>声音实验：chiptune、Web Audio、小型声景设计。</li>
-            </ul>
-          </article>
-
-          <article class="rail-card">
-            <span class="section-kicker">DESIGN RULES</span>
-            <h3>博客维护原则</h3>
-            <ul class="info-list">
-              <li>氛围要强，但不能压过正文。</li>
-              <li>像素字体只做强调，长文本保持可读。</li>
-              <li>公开导航里的链接必须真实可达。</li>
-              <li>能静态部署的功能，不引入复杂后端。</li>
+              <li>像素地图、地形与场景氛围。</li>
+              <li>Shader、调色板与实时渲染。</li>
+              <li>Web Audio、chiptune 与小型声景。</li>
+              <li>把实验做成可以使用的小工具。</li>
             </ul>
           </article>
         </aside>
@@ -91,87 +77,52 @@
         <div class="center-column">
           <div class="surface-grid">
             <article class="surface-card">
-              <span class="section-kicker">WHY THIS VERSION</span>
-              <h2>这个博客保持像素氛围，但结构以长期更新为目标。</h2>
-              <ul>
-                <li>文章是独立页面，不再依赖浮层交互。</li>
-                <li>像素风格集中在头图和场景装饰，正文排版专注可读性。</li>
-                <li>目录结构适合 GitHub Pages，以后也方便切到静态站生成器。</li>
-                <li>公开导航区分内容 / 项目 / 模板 / 关于四种入口。</li>
-              </ul>
+              <span class="section-kicker">WHY I WRITE</span>
+              <h2>记录不仅是展示结果，也是保存思考。</h2>
+              <p>很多项目真正有价值的部分，藏在选择方案、推翻假设和处理细节的过程里。我希望把这些过程写清楚，让未来的自己也能重新理解当时为什么这样做。</p>
             </article>
 
             <article class="surface-card">
-              <span class="section-kicker">CONTENT SYSTEM</span>
-              <h2>每一页只承担一个职责。</h2>
-              <p>首页负责导览与精选，归档页负责文章检索，项目页负责作品记录，模板页负责设计支撑，关于页负责联系入口。这样长期更新时不会到处重复维护同一件事。</p>
-            </article>
-
-            <article class="surface-card">
-              <span class="section-kicker">NEXT STEP</span>
-              <h2>后续会逐步接入的服务</h2>
-              <p>包括 Giscus 评论、真实文章发布、Web Audio 演示片段和微信二维码图片展示。这些会让博客从“能看”进一步变成“能交流、能沉淀”。</p>
-            </article>
-
-            <article class="surface-card" id="contact">
-              <span class="section-kicker">CONTACT STRATEGY</span>
-              <h2>目前的联系入口</h2>
-              <p>暂时不做假的订阅框和留言板。真实可用的入口是 GitHub 仓库、GitHub Issues、YouTube 频道和后续会补上的微信二维码。</p>
-              <div class="hero-actions">
-                <a class="button-secondary" href="https://github.com/LNOTM/my-blog" target="_blank" rel="noopener noreferrer">打开仓库</a>
-              </div>
+              <span class="section-kicker">WHAT YOU WILL FIND</span>
+              <h2>这里会出现什么</h2>
+              <p>技术笔记、视觉实验、项目复盘、声音草图，以及偶尔完成的小作品。文章会在真正准备好之后发布，不用示例内容填满页面。</p>
             </article>
           </div>
 
-          <div class="section-header">
+          <div class="section-header" id="contact">
             <div>
-              <span class="section-kicker">SOCIAL LINKS</span>
-              <h2>联系方式与外部渠道</h2>
+              <span class="section-kicker">CONTACT</span>
+              <h2>链接与联系</h2>
             </div>
-            <a class="chip-link" href="https://github.com/LNOTM/my-blog/issues" target="_blank" rel="noopener noreferrer">提交反馈</a>
           </div>
 
           <div class="contact-grid">
             <article class="contact-card">
-              <span class="section-kicker">WECHAT</span>
-              <h3>公众号入口</h3>
-              <p>扫码添加微信或查看二维码名片，用于读者交流、项目沟通和后续内容更新。</p>
-              <div class="contact-meta">微信二维码已提供，建议后续上传到站点资源目录并在这里展示图片入口。</div>
+              <span class="section-kicker">GITHUB</span>
+              <h3>代码与项目</h3>
+              <p>查看公开仓库、版本记录和正在维护的项目。</p>
+              <div class="contact-meta"><a href="https://github.com/LNOTM" target="_blank" rel="noopener noreferrer">github.com/LNOTM</a></div>
             </article>
 
             <article class="contact-card">
               <span class="section-kicker">YOUTUBE</span>
-              <h3>YouTube 频道</h3>
-              <p>适合承接演示视频、shader 片段、作品记录和短讲解。</p>
-              <div class="contact-meta"><a href="https://www.youtube.com/@LNTOM-L" target="_blank" rel="noopener noreferrer">https://www.youtube.com/@LNTOM-L</a></div>
+              <h3>演示与片段</h3>
+              <p>项目演示、短讲解和一些更适合视频呈现的内容。</p>
+              <div class="contact-meta"><a href="https://www.youtube.com/@LNTOM-L" target="_blank" rel="noopener noreferrer">youtube.com/@LNTOM-L</a></div>
             </article>
 
             <article class="contact-card">
-              <span class="section-kicker">EMAIL</span>
-              <h3>联系邮箱</h3>
-              <p>用于问题反馈、内容建议和站点维护沟通。</p>
-              <div class="contact-meta"><a href="https://github.com/LNOTM/my-blog/issues" target="_blank" rel="noopener noreferrer">通过 GitHub Issues 联系</a></div>
-            </article>
-
-            <article class="contact-card">
-              <span class="section-kicker">GITHUB</span>
-              <h3>代码与版本</h3>
-              <p>把站点代码、Issues、更新日志和后续发布流程聚合到仓库里。</p>
-              <div class="contact-meta"><a href="https://github.com/LNOTM/my-blog" target="_blank" rel="noopener noreferrer">https://github.com/LNOTM/my-blog</a></div>
+              <span class="section-kicker">ISSUES</span>
+              <h3>反馈与留言</h3>
+              <p>如果想讨论博客内容或报告问题，可以通过仓库 Issues 联系。</p>
+              <div class="contact-meta"><a href="https://github.com/LNOTM/my-blog/issues" target="_blank" rel="noopener noreferrer">打开 GitHub Issues</a></div>
             </article>
           </div>
         </div>
 
         <aside class="side-rail side-rail-right">
           <article class="rail-card">
-            <span class="section-kicker">PUBLISH NOTE</span>
-            <h3>发布节奏</h3>
-            <p>正式文章上线时，会同步更新归档页、feed.xml、sitemap.xml，并在首页选出精选卡片。项目更新集中在项目页。</p>
-          </article>
-
-          <article class="rail-card">
-            <span class="section-kicker">LIVE STATUS</span>
-            <h3>当前状态板</h3>
+            <span class="section-kicker">LIVE SCENE</span>
             <div class="status-stack">
               <div class="status-line"><strong>TIME</strong><span data-now-time>--:--</span></div>
               <div class="status-line"><strong>SCENE</strong><span data-scene-name>Evening</span></div>
@@ -186,7 +137,7 @@
   <footer class="site-footer">
     <div class="footer-panel">
       <div class="footer-meta">
-        <span>About Pixel Blog</span>
+        <span>About LNOTM</span>
         <span id="busuanzi_container_site_pv">总访问 <span id="busuanzi_value_site_pv"></span></span>
         <span id="busuanzi_container_site_uv">访客 <span id="busuanzi_value_site_uv"></span></span>
         <span>MIT License &copy; <span data-current-year></span> LNOTM</span>

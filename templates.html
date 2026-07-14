@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Template Kit | Pixel Blog</title>
-  <meta name="description" content="LNOTM Blog 的示例博客模板页，展示这个静态博客的内容结构、发布清单和可复用页面设计。">
+  <title>写作模板资料 | LNOTM</title>
+  <meta name="description" content="独立保存的文章模板、项目更新模板和发布检查清单。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,20 +14,17 @@
 </head>
 <body>
   <a class="skip-link" href="#main">跳到正文</a>
-
   <header class="site-header">
     <div class="site-header-inner">
-      <a class="brand" href="index.html" aria-label="Pixel Blog 首页">
-        <span class="brand-mark">PB</span>
-        <span class="brand-copy"><strong>PIXEL BLOG</strong><span>retro atmosphere, readable structure</span></span>
+      <a class="brand" href="index.html" aria-label="LNOTM 首页">
+        <span class="brand-mark">LN</span>
+        <span class="brand-copy"><strong>LNOTM</strong><span>template library</span></span>
       </a>
-      <nav class="site-nav" aria-label="主导航">
-        <a href="index.html">首页</a>
+      <nav class="site-nav" aria-label="博客导航">
+        <a href="index.html">返回博客</a>
         <a href="projects.html">项目</a>
         <a href="archive.html">归档</a>
-        <a href="templates.html" aria-current="page">模板</a>
         <a href="about.html">关于</a>
-
         <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
           <span class="theme-toggle-dot" aria-hidden="true"></span>
           <span data-theme-toggle-label>切换晴天</span>
@@ -40,36 +37,18 @@
     <section class="page-hero">
       <div class="site-shell page-band">
         <article class="page-band-copy">
-          <span class="article-kicker">BLOG TEMPLATE KIT</span>
-          <h1>这个页面保留示例博客结构，作为别人了解设计支撑的入口。</h1>
-          <p>正式博客不再把模板放进主导航，但如果访客想看这个站点如何组织文章、项目和发布流程，可以从这里查看可复用的模板材料。</p>
+          <span class="article-kicker">TEMPLATE LIBRARY</span>
+          <h1>独立保存的写作与发布资料</h1>
+          <p>这里存放文章结构、项目更新格式和发布检查清单。它们是维护博客时使用的资料，不属于 LNOTM 博客正文，也不出现在主导航中。</p>
         </article>
-
         <aside class="page-band-panel">
-          <span class="section-kicker">WHAT IT SHOWS</span>
-          <h3>这里不是正式文章列表，而是站点设计说明。</h3>
+          <span class="section-kicker">REFERENCE ONLY</span>
           <div class="status-stack">
-            <div class="status-line"><strong>POST</strong><span>文章结构示例</span></div>
-            <div class="status-line"><strong>PROJECT</strong><span>项目更新结构</span></div>
-            <div class="status-line"><strong>CHECK</strong><span>发布前检查</span></div>
+            <div class="status-line"><strong>POST</strong><span>文章结构</span></div>
+            <div class="status-line"><strong>PROJECT</strong><span>项目更新</span></div>
+            <div class="status-line"><strong>CHECK</strong><span>发布检查</span></div>
           </div>
         </aside>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="site-shell surface-grid">
-        <article class="surface-card">
-          <span class="section-kicker">DESIGN ROLE</span>
-          <h2>模板页现在承担“设计支撑”，不再干扰正式博客内容。</h2>
-          <p>首页、项目页、归档页和关于页面向普通读者；这个页面面向想复用结构或理解站点设计的人。</p>
-        </article>
-
-        <article class="surface-card">
-          <span class="section-kicker">HOW TO USE</span>
-          <h2>你自己写博客时，只需要使用内部模板文件。</h2>
-          <p>复制下面的 Markdown 模板起草内容，正式发布时再整理成 `posts/` 里的 HTML 页面。</p>
-        </article>
       </div>
     </section>
 
@@ -78,36 +57,27 @@
         <article class="template-card">
           <span class="section-kicker">TEMPLATE 01</span>
           <h3>技术文章模板</h3>
-          <p>适合方法总结、项目复盘、创意编码、工具使用记录这类“问题 - 思路 - 过程 - 结论”型文章。</p>
+          <p>适合方法总结、项目复盘、创意编码和工具使用记录。</p>
           <div class="template-meta"><span>Technical Post</span><span>How-to</span><span>Deep Dive</span></div>
-          <div class="hero-actions">
-            <a class="button" href="content-templates/technical-article-template.md">查看模板文件</a>
-          </div>
+          <div class="hero-actions"><a class="button" href="content-templates/technical-article-template.md">查看模板</a></div>
         </article>
-
         <article class="template-card">
           <span class="section-kicker">TEMPLATE 02</span>
           <h3>项目更新模板</h3>
-          <p>适合开发日志、版本更新、阶段复盘、截图记录这类“这次做了什么、下一步做什么”的内容。</p>
+          <p>适合开发日志、版本更新、阶段复盘和截图记录。</p>
           <div class="template-meta"><span>Project Update</span><span>Dev Log</span><span>Retrospective</span></div>
-          <div class="hero-actions">
-            <a class="button" href="content-templates/project-update-template.md">查看模板文件</a>
-          </div>
+          <div class="hero-actions"><a class="button" href="content-templates/project-update-template.md">查看模板</a></div>
         </article>
-
         <article class="template-card">
           <span class="section-kicker">CHECKLIST</span>
           <h3>发布检查清单</h3>
-          <p>每次发布前检查链接、归档、RSS、sitemap 和 GitHub Pages 状态，避免博客越写越乱。</p>
+          <p>发布前检查链接、归档、RSS、sitemap 和 GitHub Pages 状态。</p>
           <div class="template-meta"><span>Workflow</span><span>QA</span><span>Release</span></div>
-          <div class="hero-actions">
-            <a class="button-secondary" href="content-templates/publishing-checklist.md">查看清单</a>
-          </div>
+          <div class="hero-actions"><a class="button-secondary" href="content-templates/publishing-checklist.md">查看清单</a></div>
         </article>
-
         <article class="callout-note">
-          <strong>PUBLIC NOTE</strong>
-          <p>这个页面可以从项目页进入，作用是说明博客模板和发布流程；正式文章仍以归档页和文章页为准。</p>
+          <strong>INTERNAL REFERENCE</strong>
+          <p>模板资料与公开博客内容分开维护。返回首页即可继续阅读正式内容。</p>
         </article>
       </div>
     </section>
@@ -116,15 +86,12 @@
   <footer class="site-footer">
     <div class="footer-panel">
       <div class="footer-meta">
-        <span>Blog Template Kit</span>
-        <span id="busuanzi_container_site_pv">总访问 <span id="busuanzi_value_site_pv"></span></span>
-        <span id="busuanzi_container_site_uv">访客 <span id="busuanzi_value_site_uv"></span></span>
+        <span>LNOTM Template Library</span>
+        <span><a href="index.html">返回博客首页</a></span>
         <span>MIT License &copy; <span data-current-year></span> LNOTM</span>
       </div>
     </div>
   </footer>
-
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>
